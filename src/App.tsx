@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import bookImage from './assets/background-book.png'
 import './App.css'
 import Tabs from './components/Tabs'
