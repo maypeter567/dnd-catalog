@@ -1,33 +1,38 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import bookImage from './assets/background-book.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeTab, setActiveTab] = useState('home')
+
+  const tabs = [
+    { id: 'toc', label: 'Table of Contents', href: '/TOC' },
+    { id: 'bookmarks', label: 'Bookmarks', href: '/bookmarks' },
+    { id: 'races', label: 'Races', href: '/races' },
+    { id: 'classes', label: 'Classes', href: '/classes' },
+    { id: 'backstory', label: 'Backstory', href: '/backstory' },
+    { id: 'spells', label: 'Spells', href: '/spells' },
+    { id: 'monsters', label: 'Monsters', href: '/monsters' },
+    { id: 'items', label: 'Items', href: '/items' },
+  ]
 
   return (
     <>
+      <nav className="tabs">
+        {tabs.map(tab => (
+          <a
+            key={tab.id}
+            href={tab.href}
+            className={`tab ${activeTab === tab.id ? 'active' : ''}`}
+            onClick={() => setActiveTab(tab.id)}
+          >
+            {tab.label}
+          </a>
+        ))}
+      </nav>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src={bookImage} alt="Book" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
