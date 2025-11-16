@@ -19,7 +19,9 @@ function App() {
           </div>
           <SearchFairy onNavigate={setActiveTab} />
         </header>
-        <Tabs activeTab={activeTab} onSelectTab={setActiveTab} />
+        <main>
+          <Tabs activeTab={activeTab} onSelectTab={setActiveTab} />
+        </main>
       </div>
     </TabsProvider>
   )

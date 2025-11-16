@@ -10,12 +10,12 @@ interface Props {
 const Card = ({ content }: Props) => {
   return (
     <li className="card">
-      <details>
-        <summary className="card-summary">
+      <div className="details">
+        <div className="card-summary">
           <h3 className="card-title">{content.title}</h3>
-        </summary>
+        </div>
         <p className="card-description">{content.description}</p>
-      </details>
+      </div>
     </li>
   )
 }
