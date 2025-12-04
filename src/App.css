@@ -68,25 +68,33 @@ main {
 
 .tabs-right {
   position: absolute;
-  right: 20px;              /* how far tabs stick out */
-  top: 15%;                  /* vertical position */
+  right: 20px;
+  /* how far tabs stick out */
+  top: 15%;
+  /* vertical position */
   display: flex;
   flex-direction: column;
   gap: 8px;
-  z-index: 3;               /* above book */
+  z-index: 3;
+  /* above book */
 }
 
 .tab-ribbon {
   position: relative;
-  background: #fae1a9;       /* parchment color */
-  padding: 6px 12px;
-  font-size: 0.9rem;
+  background-image: url("/src/assets/old-page.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position-y: bottom;
+  /* parchment color */
+  padding: 6px 20px;
+  font-size: .95rem;
   font-weight: 600;
+  color: black;
   cursor: pointer;
   clip-path: polygon(75% 0%, 100% 49%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
   min-width: 90px;
+  border: 1px solid rgb(159, 126, 88);
   text-align: left;
-  border: none;
 
   /* Vertically stack no matter scale */
   transform-origin: left center;
@@ -96,11 +104,11 @@ main {
 }
 
 .tab-ribbon:hover {
-  background: #f7d997;
+  transform: translateX(-6px);
 }
 
 .tab-ribbon.active {
-  background: #c18838;
+  transform: translateX(-12px);
 }
 
 .page-section {
