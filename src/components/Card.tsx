@@ -15,10 +15,11 @@ const Card = ({ content }: Props) => {
         <div className="card-summary">
           <h3 className="card-title">{content.title}</h3>
         </div>
+        <p className="card-header">{content.headerBlock}</p>
         <p className="card-description">{content.description}</p>
       </div>
     </li>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

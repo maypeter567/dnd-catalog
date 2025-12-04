@@ -2,17 +2,12 @@ import type { Contents } from "../components/Card";
 
 // Generic Contents shape for catalog entries; headerBlock can hold meta like spell components.
 
-
 export const defaultBackstories: Contents[] = [
   {
     title: "Noble",
     description: "You come from a wealthy family with a noble title.",
-    title: "Noble",
-    description: "You come from a wealthy family with a noble title.",
   },
   {
-    title: "Soldier",
-    description: "You have served in a military organization.",
     title: "Soldier",
     description: "You have served in a military organization.",
   },
@@ -22,12 +17,8 @@ export const defaultClasses: Contents[] = [
   {
     title: "Barbarian",
     description: "The man, the myth, the rage.",
-    title: "Barbarian",
-    description: "The man, the myth, the rage.",
   },
   {
-    title: "Bard",
-    description: "The musical spellcaster.",
     title: "Bard",
     description: "The musical spellcaster.",
   },
@@ -39,8 +30,6 @@ export const defaultItems: Contents[] = [
     description: "A sharp blade for melee combat.",
   },
   {
-    title: "Shield",
-    description: "Provides protection against attacks.",
     title: "Shield",
     description: "Provides protection against attacks.",
   },
@@ -70,9 +59,9 @@ export const defaultRaces: Contents[] = [
 
 export const defaultSpells: Contents[] = [
   {
-    title: "Fireball\n3rd level evocation",
+    title: "Fireball",
     headerBlock:
-      "Casting time: 1 action\nRange: 150 feet\nComponents: V, S, M (a tiny ball of bat guano and sulfur)\nDuration: Instantaneous\nClasses: Sorcerer, Wizard",
+      "3rd level evocation\nCasting time: 1 action\nRange: 150 feet\nComponents: V, S, M (a tiny ball of bat guano and sulfur)\nDuration: Instantaneous\nClasses: Sorcerer, Wizard",
     description: "A ball of fire that explodes upon impact, dealing damage.",
   },
   {
@@ -91,4 +80,3 @@ export const defaultToc: Contents[] = [
     description: "How to use the catalog effectively.",
   },
 ];
-
