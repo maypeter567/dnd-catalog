@@ -1,4 +1,3 @@
-import bookImage from "../assets/Scroll.png"
 import { sectionDefinitions, type TabId } from "../data/sections"
 
 type TabsProps = {
@@ -17,10 +16,8 @@ export default function Tabs({ activeTab, onSelectTab }: TabsProps) {
 
     return (
         <div className="book-layout">
-            <div className="book-wrapper">
-                <img src={bookImage} alt="Open book" className="book-image" />
-
-                <div className="page-overlay">
+            <div className="scroll-wrapper">
+                <div className="page-overlay scroll-body">
                     <ActiveComponent />
                 </div>
 
