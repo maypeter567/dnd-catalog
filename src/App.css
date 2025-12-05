@@ -4,7 +4,7 @@
 }
 
 main {
-  margin-top: -100px;
+  margin-top: 1.5rem;
   position: relative;
   z-index: 0;
 }
@@ -42,7 +42,8 @@ main {
   width: min(96vw, 1200px);
   min-height: 400px;
   margin-inline: auto;
- background-image: url("/src/assets/old-page.jpg");
+  margin-top: 1rem;
+  background-image: url("/src/assets/old-page.jpg");
   background-position: center;
   background-size: 100% auto;
   border: 1px solid #c8a366;
@@ -78,7 +79,7 @@ main {
 
 .tabs-right {
   position: absolute;
-  right: -5px;
+  right: 12px;
   top: 10%;
   display: flex;
   flex-direction: column;
