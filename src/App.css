@@ -79,7 +79,7 @@ main {
 
 .tabs-right {
   position: absolute;
-  right: 12px;
+  right: -150px;
   top: 10%;
   display: flex;
   flex-direction: column;
@@ -379,6 +379,15 @@ main {
 @media (max-width: 900px) {
   .scroll-wrapper {
     width: 100%;
+  }
+
+  .tabs-right {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 6px;
+    margin-top: 0.75rem;
   }
 
   .tab-ribbon {
