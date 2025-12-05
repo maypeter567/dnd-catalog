@@ -257,17 +257,16 @@ export const defaultClasses: Contents[] = [
 
 export const defaultItems: Contents[] = [
   {
-    title: "Longsword",
+    title: "Chain Mail",
     headerBlock:
-      "Martial melee weapon\n" +
-      "Cost: 15 gp\n" +
-      "Damage: 1d8 slashing (versatile 1d10)\n" +
-      "Weight: 3 lb.\n" +
-      "Properties: Versatile",
+      "Heavy armor\n" +
+      "Cost: 75 gp\n" +
+      "Armor Class: 16\n" +
+      "Strength Requirement: 13\n" +
+      "Stealth: Disadvantage\n" +
+      "Weight: 55 lb.",
     description:
-      "A longsword is the quintessential knight's weapon—a sturdy, double‑edged blade that can be wielded in one hand or two.  " +
-      "It deals 1d8 slashing damage when used one‑handed and 1d10 when used with both hands.  " +
-      "The weapon costs 15 gp, weighs 3 pounds and is versatile, allowing warriors to switch between a sword‑and‑shield style and a heavier grip.",
+      "Chain mail is a suit of interlocking metal rings that provides stout protection.  It grants a fixed AC of 16 but requires a Strength score of 13 to wear effectively and imposes disadvantage on Stealth checks.  The armor weighs 55 pounds and costs 75 gp.",
   },
   {
     title: "Dagger",
@@ -282,27 +281,10 @@ export const defaultItems: Contents[] = [
       "A dagger weighs only 1 pound, costs 2 gp and is light and throwable, with a normal range of 20 feet and a long range of 60 feet.",
   },
   {
-    title: "Rapier",
-    headerBlock:
-      "Martial melee weapon\n" +
-      "Cost: 25 gp\n" +
-      "Damage: 1d8 piercing\n" +
-      "Weight: 2 lb.\n" +
-      "Properties: Finesse",
+    title: "Explorer’s Pack",
+    headerBlock: "Equipment pack\n" + "Cost: 10 gp\n" + "Weight: 59 lb.",
     description:
-      "The rapier is a slender thrusting sword prized by duelists and rogues for its precision.  It deals 1d8 piercing damage and has the finesse property, letting wielders use Dexterity for attack and damage rolls.  " +
-      "Rapiers cost 25 gp and weigh 2 pounds, making them a stylish yet deadly choice for lightly armored combatants.",
-  },
-  {
-    title: "Shortbow",
-    headerBlock:
-      "Simple ranged weapon\n" +
-      "Cost: 25 gp\n" +
-      "Damage: 1d6 piercing\n" +
-      "Weight: 2 lb.\n" +
-      "Properties: Ammunition (range 80/320), two‑handed",
-    description:
-      "A shortbow is a compact bow used to fire arrows at distant targets.  It deals 1d6 piercing damage and requires two hands to draw and shoot.  The shortbow uses ammunition and has a normal range of 80 feet and a maximum range of 320 feet.  It costs 25 gp and weighs 2 pounds.",
+      "The explorer’s pack bundles together essentials for long expeditions.  It includes a backpack, a bedroll, a mess kit, a tinderbox, ten torches, ten days of rations, a waterskin and a 50‑foot coil of hempen rope strapped to the side.  The entire pack weighs 59 pounds and costs 10 gp.",
   },
   {
     title: "Greatsword",
@@ -316,15 +298,10 @@ export const defaultItems: Contents[] = [
       "Greatswords are massive blades that require both hands to swing.  They inflict 2d6 slashing damage and count as heavy weapons, which means Small creatures have disadvantage on attack rolls with them.  The sword costs 50 gp, weighs 6 pounds and must be wielded with two hands.",
   },
   {
-    title: "Light Crossbow",
-    headerBlock:
-      "Simple ranged weapon\n" +
-      "Cost: 25 gp\n" +
-      "Damage: 1d8 piercing\n" +
-      "Weight: 5 lb.\n" +
-      "Properties: Ammunition (range 80/320), loading, two‑handed",
+    title: "Hooded Lantern",
+    headerBlock: "Adventuring gear\n" + "Cost: 5 gp\n" + "Weight: 2 lb.",
     description:
-      "The light crossbow is a mechanical bow that fires bolts with deadly accuracy.  It deals 1d8 piercing damage and has the loading property, meaning you can fire only one bolt per action regardless of extra attacks.  It requires two hands to load and shoot and uses ammunition with a normal range of 80 feet and a long range of 320 feet.  A light crossbow costs 25 gp and weighs 5 pounds.",
+      "This lantern has a shuttered hood that lets you control the amount of light it sheds.  When uncovered, it casts bright light in a 30‑foot radius and dim light for an additional 30 feet.  A hooded lantern burns for 6 hours on a single pint of oil, and you can lower the hood to reduce its light to dim light in a 5‑foot radius.  The lantern costs 5 gp and weighs 2 pounds.",
   },
   {
     title: "Leather Armor",
@@ -337,16 +314,28 @@ export const defaultItems: Contents[] = [
       "Leather armor consists of cured hide and offers modest protection without sacrificing agility.  As light armor it sets a base AC of 11 plus the wearer’s Dexterity modifier and weighs 10 pounds.  It costs 10 gp and doesn’t impose disadvantage on Dexterity (Stealth) checks.",
   },
   {
-    title: "Chain Mail",
+    title: "Light Crossbow",
     headerBlock:
-      "Heavy armor\n" +
-      "Cost: 75 gp\n" +
-      "Armor Class: 16\n" +
-      "Strength Requirement: 13\n" +
-      "Stealth: Disadvantage\n" +
-      "Weight: 55 lb.",
+      "Simple ranged weapon\n" +
+      "Cost: 25 gp\n" +
+      "Damage: 1d8 piercing\n" +
+      "Weight: 5 lb.\n" +
+      "Properties: Ammunition (range 80/320), loading, two‑handed",
     description:
-      "Chain mail is a suit of interlocking metal rings that provides stout protection.  It grants a fixed AC of 16 but requires a Strength score of 13 to wear effectively and imposes disadvantage on Stealth checks.  The armor weighs 55 pounds and costs 75 gp.",
+      "The light crossbow is a mechanical bow that fires bolts with deadly accuracy.  It deals 1d8 piercing damage and has the loading property, meaning you can fire only one bolt per action regardless of extra attacks.  It requires two hands to load and shoot and uses ammunition with a normal range of 80 feet and a long range of 320 feet.  A light crossbow costs 25 gp and weighs 5 pounds.",
+  },
+  {
+    title: "Longsword",
+    headerBlock:
+      "Martial melee weapon\n" +
+      "Cost: 15 gp\n" +
+      "Damage: 1d8 slashing (versatile 1d10)\n" +
+      "Weight: 3 lb.\n" +
+      "Properties: Versatile",
+    description:
+      "A longsword is the quintessential knight's weapon—a sturdy, double‑edged blade that can be wielded in one hand or two.  " +
+      "It deals 1d8 slashing damage when used one‑handed and 1d10 when used with both hands.  " +
+      "The weapon costs 15 gp, weighs 3 pounds and is versatile, allowing warriors to switch between a sword‑and‑shield style and a heavier grip.",
   },
   {
     title: "Plate Armor",
@@ -361,13 +350,6 @@ export const defaultItems: Contents[] = [
       "Plate armor consists of interlocking metal plates that cover the entire body.  It provides an AC of 18, requires a Strength score of 15 to don properly, and imposes disadvantage on Stealth checks.  Plate weighs 65 pounds and is the most expensive mundane armor, costing 1,500 gp.",
   },
   {
-    title: "Shield",
-    headerBlock:
-      "Armor\n" + "Cost: 10 gp\n" + "AC Bonus: +2\n" + "Weight: 6 lb.",
-    description:
-      "A shield is a broad piece of metal or wood strapped to the arm.  Wielding a shield increases your Armor Class by 2 but usually occupies one hand.  A standard shield weighs 6 pounds and costs 10 gp.",
-  },
-  {
     title: "Potion of Healing",
     headerBlock:
       "Potion (common)\n" +
@@ -376,6 +358,18 @@ export const defaultItems: Contents[] = [
       "Effect: Restores 2d4 + 2 hit points",
     description:
       "This vial of glimmering red liquid restores vitality when consumed.  Drinking a common potion of healing causes the imbiber to regain 2d4 + 2 hit points.  The item weighs half a pound, costs 50 gp and is commonly kept in a healer’s kit or adventurer’s pack.  More potent variants grant greater healing as noted in the Potions of Healing table.",
+  },
+  {
+    title: "Rapier",
+    headerBlock:
+      "Martial melee weapon\n" +
+      "Cost: 25 gp\n" +
+      "Damage: 1d8 piercing\n" +
+      "Weight: 2 lb.\n" +
+      "Properties: Finesse",
+    description:
+      "The rapier is a slender thrusting sword prized by duelists and rogues for its precision.  It deals 1d8 piercing damage and has the finesse property, letting wielders use Dexterity for attack and damage rolls.  " +
+      "Rapiers cost 25 gp and weigh 2 pounds, making them a stylish yet deadly choice for lightly armored combatants.",
   },
   {
     title: "Rope (50 ft., hempen)",
@@ -388,10 +382,22 @@ export const defaultItems: Contents[] = [
       "A 50‑foot coil of hempen rope is a staple of any adventuring kit.  Rope made of hemp has 2 hit points and can be burst with a DC 17 Strength check.  This length weighs 10 pounds and costs 1 gp, and is invaluable for climbing, tying or securing equipment.",
   },
   {
-    title: "Thieves’ Tools",
-    headerBlock: "Tools\n" + "Cost: 25 gp\n" + "Weight: 1 lb.",
+    title: "Shield",
+    headerBlock:
+      "Armor\n" + "Cost: 10 gp\n" + "AC Bonus: +2\n" + "Weight: 6 lb.",
     description:
-      "Thieves’ tools are a collection of delicate instruments used to pick locks and disable traps.  The kit contains a small file, various lock picks, a mirror mounted on a handle, narrow‑bladed scissors and a pair of pliers.  Proficiency with these tools lets a character add their proficiency bonus to checks made to open locks or disarm traps.  Thieves’ tools weigh 1 pound and cost 25 gp.",
+      "A shield is a broad piece of metal or wood strapped to the arm.  Wielding a shield increases your Armor Class by 2 but usually occupies one hand.  A standard shield weighs 6 pounds and costs 10 gp.",
+  },
+  {
+    title: "Shortbow",
+    headerBlock:
+      "Simple ranged weapon\n" +
+      "Cost: 25 gp\n" +
+      "Damage: 1d6 piercing\n" +
+      "Weight: 2 lb.\n" +
+      "Properties: Ammunition (range 80/320), two‑handed",
+    description:
+      "A shortbow is a compact bow used to fire arrows at distant targets.  It deals 1d6 piercing damage and requires two hands to draw and shoot.  The shortbow uses ammunition and has a normal range of 80 feet and a maximum range of 320 feet.  It costs 25 gp and weighs 2 pounds.",
   },
   {
     title: "Spellbook",
@@ -400,110 +406,14 @@ export const defaultItems: Contents[] = [
       "A spellbook is a leather‑bound tome containing 100 blank vellum pages for the recording of spells.  It is essential for wizards, who inscribe the rituals and formulae of their spells in its pages.  A blank spellbook weighs 3 pounds and costs 50 gp.",
   },
   {
-    title: "Hooded Lantern",
-    headerBlock: "Adventuring gear\n" + "Cost: 5 gp\n" + "Weight: 2 lb.",
+    title: "Thieves’ Tools",
+    headerBlock: "Tools\n" + "Cost: 25 gp\n" + "Weight: 1 lb.",
     description:
-      "This lantern has a shuttered hood that lets you control the amount of light it sheds.  When uncovered, it casts bright light in a 30‑foot radius and dim light for an additional 30 feet.  A hooded lantern burns for 6 hours on a single pint of oil, and you can lower the hood to reduce its light to dim light in a 5‑foot radius.  The lantern costs 5 gp and weighs 2 pounds.",
-  },
-  {
-    title: "Explorer’s Pack",
-    headerBlock: "Equipment pack\n" + "Cost: 10 gp\n" + "Weight: 59 lb.",
-    description:
-      "The explorer’s pack bundles together essentials for long expeditions.  It includes a backpack, a bedroll, a mess kit, a tinderbox, ten torches, ten days of rations, a waterskin and a 50‑foot coil of hempen rope strapped to the side.  The entire pack weighs 59 pounds and costs 10 gp.",
+      "Thieves’ tools are a collection of delicate instruments used to pick locks and disable traps.  The kit contains a small file, various lock picks, a mirror mounted on a handle, narrow‑bladed scissors and a pair of pliers.  Proficiency with these tools lets a character add their proficiency bonus to checks made to open locks or disarm traps.  Thieves’ tools weigh 1 pound and cost 25 gp.",
   },
 ];
 
 export const defaultMonsters: Contents[] = [
-  {
-    title: "Goblin",
-    headerBlock:
-      "Size/Type: Small humanoid (goblinoid), neutral evil\n" +
-      "Armor Class: 14 (hide armor, shield)\n" +
-      "Hit Points: 7 (2d6)\n" +
-      "Speed: 30 ft.\n" +
-      "Ability Scores: Str 8, Dex 14, Con 10, Int 10, Wis 8, Cha 8\n" +
-      "Skills: Stealth +6\n" +
-      "Senses: Darkvision 60 ft., passive Perception 9\n" +
-      "Languages: Goblin\n" +
-      "Challenge: 1/4 (50 XP)",
-    description:
-      "Goblin raiders skulk in caves and ruins.  Their Nimble Escape trait lets them take the Disengage or Hide action as a bonus action, allowing them to dart in and out of combat.  Goblins prefer ambush tactics and rarely fight fair.",
-  },
-  {
-    title: "Skeleton",
-    headerBlock:
-      "Size/Type: Medium undead, lawful evil\n" +
-      "Armor Class: 13 (armor scraps)\n" +
-      "Hit Points: 13 (2d8 + 4)\n" +
-      "Speed: 30 ft.\n" +
-      "Ability Scores: Str 10, Dex 14, Con 15, Int 6, Wis 8, Cha 5\n" +
-      "Damage Vulnerabilities: Bludgeoning\n" +
-      "Damage Immunities: Poison; Condition Immunities: Exhaustion, Poisoned\n" +
-      "Senses: Darkvision 60 ft., passive Perception 9\n" +
-      "Languages: Understands languages it knew in life but can’t speak\n" +
-      "Challenge: 1/4 (50 XP)",
-    description:
-      "Reanimated by dark magic, skeletons wield rusty swords or bows and follow simple orders.  They are brittle and vulnerable to bludgeoning damage but immune to poison and do not tire.",
-  },
-  {
-    title: "Zombie",
-    headerBlock:
-      "Size/Type: Medium undead, neutral evil\n" +
-      "Armor Class: 8\n" +
-      "Hit Points: 22 (3d8 + 9)\n" +
-      "Speed: 20 ft.\n" +
-      "Ability Scores: Str 13, Dex 6, Con 16, Int 3, Wis 6, Cha 5\n" +
-      "Damage Immunities: Poison; Condition Immunities: Poisoned\n" +
-      "Senses: Darkvision 60 ft., passive Perception 8\n" +
-      "Languages: Understands languages it knew in life but can’t speak\n" +
-      "Challenge: 1/4 (50 XP)",
-    description:
-      "Zombies shamble forward relentlessly.  Their Undead Fortitude lets them drop to 1 hit point instead of 0 when a fatal blow would kill them, unless the damage is radiant or from a critical hit.  They attack with rotting fists.",
-  },
-  {
-    title: "Wolf",
-    headerBlock:
-      "Size/Type: Medium beast, unaligned\n" +
-      "Armor Class: 13 (natural armor)\n" +
-      "Hit Points: 11 (2d8 + 2)\n" +
-      "Speed: 40 ft.\n" +
-      "Ability Scores: Str 12, Dex 15, Con 12, Int 3, Wis 12, Cha 6\n" +
-      "Skills: Perception +3, Stealth +4\n" +
-      "Senses: Passive Perception 13\n" +
-      "Languages: —\n" +
-      "Challenge: 1/4 (50 XP)",
-    description:
-      "Wolves are pack hunters that rely on teamwork.  They have Keen Hearing and Smell, granting advantage on Wisdom (Perception) checks relying on those senses, and Pack Tactics, allowing them advantage on attack rolls when an ally is within 5 feet of the target.",
-  },
-  {
-    title: "Ogre",
-    headerBlock:
-      "Size/Type: Large giant, chaotic evil\n" +
-      "Armor Class: 11 (hide armor)\n" +
-      "Hit Points: 59 (7d10 + 21)\n" +
-      "Speed: 40 ft.\n" +
-      "Ability Scores: Str 19, Dex 8, Con 16, Int 5, Wis 7, Cha 7\n" +
-      "Senses: Darkvision 60 ft., passive Perception 8\n" +
-      "Languages: Common, Giant\n" +
-      "Challenge: 2 (450 XP)",
-    description:
-      "Ogres are hulking brutes that swing enormous clubs.  Their tremendous Strength lets them hurl javelins or crush opponents with a greatclub for massive damage.  They are slow witted but ferocious.",
-  },
-  {
-    title: "Troll",
-    headerBlock:
-      "Size/Type: Large giant, chaotic evil\n" +
-      "Armor Class: 15 (natural armor)\n" +
-      "Hit Points: 84 (8d10 + 40)\n" +
-      "Speed: 30 ft.\n" +
-      "Ability Scores: Str 18, Dex 13, Con 20, Int 7, Wis 9, Cha 7\n" +
-      "Skills: Perception +2\n" +
-      "Senses: Darkvision 60 ft., passive Perception 12\n" +
-      "Languages: Giant\n" +
-      "Challenge: 5 (1,800 XP)",
-    description:
-      "Trolls are fearsome regenerative monsters.  Their Keen Smell aids tracking, and their Regeneration allows them to regain 10 hit points at the start of each of their turns unless they take acid or fire damage.  They tear foes apart with bite and claw attacks.",
-  },
   {
     title: "Adult Red Dragon",
     headerBlock:
@@ -522,21 +432,6 @@ export const defaultMonsters: Contents[] = [
       "An adult red dragon is the embodiment of greed and destruction.  It can breathe a devastating cone of fire and has legendary resistance to shrug off failed saving throws.  Its legendary actions allow it to make additional tail or wing attacks, making it a deadly apex predator.",
   },
   {
-    title: "Orc",
-    headerBlock:
-      "Size/Type: Medium humanoid (orc), chaotic evil\n" +
-      "Armor Class: 13 (hide armor)\n" +
-      "Hit Points: 15 (2d8 + 6)\n" +
-      "Speed: 30 ft.\n" +
-      "Ability Scores: Str 16, Dex 12, Con 16, Int 7, Wis 11, Cha 10\n" +
-      "Skills: Intimidation +2\n" +
-      "Senses: Darkvision 60 ft., passive Perception 10\n" +
-      "Languages: Common, Orc\n" +
-      "Challenge: 1/2 (100 XP)",
-    description:
-      "Orcs are savage raiders who worship mighty gods.  Their Aggressive trait allows them to move toward enemies as a bonus action, helping them close distances quickly and overwhelm foes with greataxe swings and javelin throws.",
-  },
-  {
     title: "Giant Spider",
     headerBlock:
       "Size/Type: Large beast, unaligned\n" +
@@ -552,6 +447,21 @@ export const defaultMonsters: Contents[] = [
       "Giant spiders spin webs to trap prey.  Their Spider Climb lets them traverse walls and ceilings, and Web Sense and Web Walker enable them to detect creatures in contact with their webs and ignore movement restrictions caused by webbing.  They attack with venomous fangs and entangling webs.",
   },
   {
+    title: "Goblin",
+    headerBlock:
+      "Size/Type: Small humanoid (goblinoid), neutral evil\n" +
+      "Armor Class: 14 (hide armor, shield)\n" +
+      "Hit Points: 7 (2d6)\n" +
+      "Speed: 30 ft.\n" +
+      "Ability Scores: Str 8, Dex 14, Con 10, Int 10, Wis 8, Cha 8\n" +
+      "Skills: Stealth +6\n" +
+      "Senses: Darkvision 60 ft., passive Perception 9\n" +
+      "Languages: Goblin\n" +
+      "Challenge: 1/4 (50 XP)",
+    description:
+      "Goblin raiders skulk in caves and ruins.  Their Nimble Escape trait lets them take the Disengage or Hide action as a bonus action, allowing them to dart in and out of combat.  Goblins prefer ambush tactics and rarely fight fair.",
+  },
+  {
     title: "Kobold",
     headerBlock:
       "Size/Type: Small humanoid (kobold), lawful evil\n" +
@@ -565,18 +475,108 @@ export const defaultMonsters: Contents[] = [
     description:
       "Kobolds are cowardly but cunning trapmakers.  They suffer Sunlight Sensitivity and fight best underground.  Pack Tactics grants them advantage on attack rolls when an ally is adjacent to the target.  They attack with daggers or slings from the safety of numbers.",
   },
+  {
+    title: "Ogre",
+    headerBlock:
+      "Size/Type: Large giant, chaotic evil\n" +
+      "Armor Class: 11 (hide armor)\n" +
+      "Hit Points: 59 (7d10 + 21)\n" +
+      "Speed: 40 ft.\n" +
+      "Ability Scores: Str 19, Dex 8, Con 16, Int 5, Wis 7, Cha 7\n" +
+      "Senses: Darkvision 60 ft., passive Perception 8\n" +
+      "Languages: Common, Giant\n" +
+      "Challenge: 2 (450 XP)",
+    description:
+      "Ogres are hulking brutes that swing enormous clubs.  Their tremendous Strength lets them hurl javelins or crush opponents with a greatclub for massive damage.  They are slow witted but ferocious.",
+  },
+  {
+    title: "Orc",
+    headerBlock:
+      "Size/Type: Medium humanoid (orc), chaotic evil\n" +
+      "Armor Class: 13 (hide armor)\n" +
+      "Hit Points: 15 (2d8 + 6)\n" +
+      "Speed: 30 ft.\n" +
+      "Ability Scores: Str 16, Dex 12, Con 16, Int 7, Wis 11, Cha 10\n" +
+      "Skills: Intimidation +2\n" +
+      "Senses: Darkvision 60 ft., passive Perception 10\n" +
+      "Languages: Common, Orc\n" +
+      "Challenge: 1/2 (100 XP)",
+    description:
+      "Orcs are savage raiders who worship mighty gods.  Their Aggressive trait allows them to move toward enemies as a bonus action, helping them close distances quickly and overwhelm foes with greataxe swings and javelin throws.",
+  },
+  {
+    title: "Skeleton",
+    headerBlock:
+      "Size/Type: Medium undead, lawful evil\n" +
+      "Armor Class: 13 (armor scraps)\n" +
+      "Hit Points: 13 (2d8 + 4)\n" +
+      "Speed: 30 ft.\n" +
+      "Ability Scores: Str 10, Dex 14, Con 15, Int 6, Wis 8, Cha 5\n" +
+      "Damage Vulnerabilities: Bludgeoning\n" +
+      "Damage Immunities: Poison; Condition Immunities: Exhaustion, Poisoned\n" +
+      "Senses: Darkvision 60 ft., passive Perception 9\n" +
+      "Languages: Understands languages it knew in life but can’t speak\n" +
+      "Challenge: 1/4 (50 XP)",
+    description:
+      "Reanimated by dark magic, skeletons wield rusty swords or bows and follow simple orders.  They are brittle and vulnerable to bludgeoning damage but immune to poison and do not tire.",
+  },
+  {
+    title: "Troll",
+    headerBlock:
+      "Size/Type: Large giant, chaotic evil\n" +
+      "Armor Class: 15 (natural armor)\n" +
+      "Hit Points: 84 (8d10 + 40)\n" +
+      "Speed: 30 ft.\n" +
+      "Ability Scores: Str 18, Dex 13, Con 20, Int 7, Wis 9, Cha 7\n" +
+      "Skills: Perception +2\n" +
+      "Senses: Darkvision 60 ft., passive Perception 12\n" +
+      "Languages: Giant\n" +
+      "Challenge: 5 (1,800 XP)",
+    description:
+      "Trolls are fearsome regenerative monsters.  Their Keen Smell aids tracking, and their Regeneration allows them to regain 10 hit points at the start of each of their turns unless they take acid or fire damage.  They tear foes apart with bite and claw attacks.",
+  },
+  {
+    title: "Wolf",
+    headerBlock:
+      "Size/Type: Medium beast, unaligned\n" +
+      "Armor Class: 13 (natural armor)\n" +
+      "Hit Points: 11 (2d8 + 2)\n" +
+      "Speed: 40 ft.\n" +
+      "Ability Scores: Str 12, Dex 15, Con 12, Int 3, Wis 12, Cha 6\n" +
+      "Skills: Perception +3, Stealth +4\n" +
+      "Senses: Passive Perception 13\n" +
+      "Languages: —\n" +
+      "Challenge: 1/4 (50 XP)",
+    description:
+      "Wolves are pack hunters that rely on teamwork.  They have Keen Hearing and Smell, granting advantage on Wisdom (Perception) checks relying on those senses, and Pack Tactics, allowing them advantage on attack rolls when an ally is within 5 feet of the target.",
+  },
+  {
+    title: "Zombie",
+    headerBlock:
+      "Size/Type: Medium undead, neutral evil\n" +
+      "Armor Class: 8\n" +
+      "Hit Points: 22 (3d8 + 9)\n" +
+      "Speed: 20 ft.\n" +
+      "Ability Scores: Str 13, Dex 6, Con 16, Int 3, Wis 6, Cha 5\n" +
+      "Damage Immunities: Poison; Condition Immunities: Poisoned\n" +
+      "Senses: Darkvision 60 ft., passive Perception 8\n" +
+      "Languages: Understands languages it knew in life but can’t speak\n" +
+      "Challenge: 1/4 (50 XP)",
+    description:
+      "Zombies shamble forward relentlessly.  Their Undead Fortitude lets them drop to 1 hit point instead of 0 when a fatal blow would kill them, unless the damage is radiant or from a critical hit.  They attack with rotting fists.",
+  },
 ];
 
 export const defaultRaces: Contents[] = [
   {
-    title: "Human",
+    title: "Dragonborn",
     headerBlock:
-      "Ability Score Increase: +1 to all ability scores\n" +
+      "Ability Score Increase: +2 Strength, +1 Charisma\n" +
       "Size: Medium\n" +
       "Speed: 30 ft.\n" +
-      "Languages: Common plus one of your choice",
+      "Languages: Common, Draconic",
     description:
-      "Humans are the most adaptable and ambitious people among the common races. They reach adulthood in their late teens and live less than a century. Because of their versatility, every human character gains a +1 bonus to each ability score and knows Common and one extra language of their choice. Humans vary widely in height and build, but all share a base walking speed of 30 feet and count as Medium creatures.",
+      "Dragonborn are proud, honorable beings descended from dragons. They are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Their draconic ancestry grants them a breath weapon—an action that exudes damaging energy in a line or cone depending on their chosen dragon type—and resistance to that same damage type. Dragonborn speak Common and Draconic.",
   },
   {
     title: "Dwarf",
@@ -599,16 +599,6 @@ export const defaultRaces: Contents[] = [
       "Elves are graceful, long‑lived people who love freedom and self‑expression. They reach physical maturity at roughly the same age as humans but aren’t considered adults until around 100 and can live up to 750 years. All elves have darkvision (seeing in dim light within 60 feet as if it were bright light), proficiency in the Perception skill, advantage on saving throws against being charmed and immunity to magical sleep, and they enter a trance instead of sleeping. Elves speak Common and Elvish.",
   },
   {
-    title: "Halfling",
-    headerBlock:
-      "Ability Score Increase: +2 Dexterity\n" +
-      "Size: Small\n" +
-      "Speed: 25 ft.\n" +
-      "Languages: Common, Halfling",
-    description:
-      "Halflings are cheerful and stealthy folk standing about 3 feet tall and weighing around 40 pounds. They gain Lucky, allowing them to reroll a 1 on attack rolls, ability checks or saving throws. They also have Brave (advantage on saving throws against being frightened) and Halfling Nimbleness, enabling them to move through spaces occupied by larger creatures. Halflings speak Common and Halfling.",
-  },
-  {
     title: "Gnome",
     headerBlock:
       "Ability Score Increase: +2 Intelligence\n" +
@@ -619,14 +609,14 @@ export const defaultRaces: Contents[] = [
       "Gnomes are inventive and hardy. They stand between 3 and 4 feet tall and weigh about 40 pounds. Gnomes possess darkvision up to 60 feet and the Gnome Cunning trait, giving advantage on Intelligence, Wisdom and Charisma saving throws against magic. Rock gnomes, a common subrace, gain +1 Constitution and access to the Artificer’s Lore and Tinker features. Gnomes speak Common and Gnomish.",
   },
   {
-    title: "Dragonborn",
+    title: "Halfling",
     headerBlock:
-      "Ability Score Increase: +2 Strength, +1 Charisma\n" +
-      "Size: Medium\n" +
-      "Speed: 30 ft.\n" +
-      "Languages: Common, Draconic",
+      "Ability Score Increase: +2 Dexterity\n" +
+      "Size: Small\n" +
+      "Speed: 25 ft.\n" +
+      "Languages: Common, Halfling",
     description:
-      "Dragonborn are proud, honorable beings descended from dragons. They are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Their draconic ancestry grants them a breath weapon—an action that exudes damaging energy in a line or cone depending on their chosen dragon type—and resistance to that same damage type. Dragonborn speak Common and Draconic.",
+      "Halflings are cheerful and stealthy folk standing about 3 feet tall and weighing around 40 pounds. They gain Lucky, allowing them to reroll a 1 on attack rolls, ability checks or saving throws. They also have Brave (advantage on saving throws against being frightened) and Halfling Nimbleness, enabling them to move through spaces occupied by larger creatures. Halflings speak Common and Halfling.",
   },
   {
     title: "Half‑Elf",
@@ -647,6 +637,16 @@ export const defaultRaces: Contents[] = [
       "Languages: Common, Orc",
     description:
       "Half‑orcs blend human and orc blood, resulting in robust, imposing figures ranging from 5 to well over 6 feet tall. They have darkvision out to 60 feet, proficiency in the Intimidation skill (Menacing), and two signature abilities: Relentless Endurance allows them to drop to 1 hit point instead of 0 once per long rest, and Savage Attacks grants extra damage on melee critical hits. They speak Common and Orc.",
+  },
+  {
+    title: "Human",
+    headerBlock:
+      "Ability Score Increase: +1 to all ability scores\n" +
+      "Size: Medium\n" +
+      "Speed: 30 ft.\n" +
+      "Languages: Common plus one of your choice",
+    description:
+      "Humans are the most adaptable and ambitious people among the common races. They reach adulthood in their late teens and live less than a century. Because of their versatility, every human character gains a +1 bonus to each ability score and knows Common and one extra language of their choice. Humans vary widely in height and build, but all share a base walking speed of 30 feet and count as Medium creatures.",
   },
   {
     title: "Tiefling",
@@ -687,6 +687,18 @@ export const defaultSpells: Contents[] = [
       "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.",
   },
   {
+    title: "Lightning Bolt",
+    headerBlock:
+      "3rd level evocation\n" +
+      "Casting time: 1 action\n" +
+      "Range: Self (100‑foot line)\n" +
+      "Components: V, S, M (a bit of fur and a rod of amber, crystal, or glass)\n" +
+      "Duration: Instantaneous\n" +
+      "Classes: Sorcerer, Wizard",
+    description:
+      "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much on a successful one. The lightning ignites flammable objects in the area that aren't being worn or carried. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+  },
+  {
     title: "Magic Missile",
     headerBlock:
       "1st level evocation\n" +
@@ -697,18 +709,6 @@ export const defaultSpells: Contents[] = [
       "Classes: Sorcerer, Wizard, Fighter (Eldritch Knight)",
     description:
       "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several. When you cast this spell using a spell slot of 2nd level or higher, the spell creates one additional dart for each slot level above 1st.",
-  },
-  {
-    title: "Shield",
-    headerBlock:
-      "1st level abjuration\n" +
-      "Casting time: 1 reaction (when you are hit by an attack or targeted by the magic missile spell)\n" +
-      "Range: Self\n" +
-      "Components: V, S\n" +
-      "Duration: 1 round\n" +
-      "Classes: Sorcerer, Wizard",
-    description:
-      "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
   },
   {
     title: "Misty Step",
@@ -723,26 +723,26 @@ export const defaultSpells: Contents[] = [
       "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.",
   },
   {
-    title: "Lightning Bolt",
+    title: "Shield",
     headerBlock:
-      "3rd level evocation\n" +
-      "Casting time: 1 action\n" +
-      "Range: Self (100‑foot line)\n" +
-      "Components: V, S, M (a bit of fur and a rod of amber, crystal, or glass)\n" +
-      "Duration: Instantaneous\n" +
+      "1st level abjuration\n" +
+      "Casting time: 1 reaction (when you are hit by an attack or targeted by the magic missile spell)\n" +
+      "Range: Self\n" +
+      "Components: V, S\n" +
+      "Duration: 1 round\n" +
       "Classes: Sorcerer, Wizard",
     description:
-      "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much on a successful one. The lightning ignites flammable objects in the area that aren't being worn or carried. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+      "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
   },
 ];
 
 export const defaultToc: Contents[] = [
   {
-    title: "Introduction",
-    description: "Overview of the D&D Catalog.",
-  },
-  {
     title: "Getting Started",
     description: "How to use the catalog effectively.",
+  },
+  {
+    title: "Introduction",
+    description: "Overview of the D&D Catalog.",
   },
 ];
