@@ -15,9 +15,13 @@ export default function Backstories() {
     ));
 
   return (
-    <div>
-      <h2>Backstories Page</h2>
-      <ul className="cards-list">{cards}</ul>
+    <div className="page-section">
+      <h2>Backstory</h2>
+      <ul className="cards-list">
+        {defaultBackstories.map((item) => (
+          <Card key={item.title} content={item} fallbackIcon="story" />
+        ))}
+      </ul>
     </div>
   );
 }

@@ -15,9 +15,13 @@ export default function Classes() {
     ));
 
   return (
-    <div>
-      <h2>Classes Page</h2>
-      <ul className="cards-list">{cards}</ul>
+    <div className="page-section">
+      <h2>Classes</h2>
+      <ul className="cards-list">
+        {defaultClasses.map((item) => (
+          <Card key={item.title} content={item} fallbackIcon="class" />
+        ))}
+      </ul>
     </div>
   );
 }

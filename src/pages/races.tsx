@@ -7,7 +7,7 @@ export default function Races() {
             <h2>Races</h2>
             <ul className="cards-list">
                 {defaultRaces.map((item) => (
-                    <Card key={item.title} content={item} />
+                    <Card key={item.title} content={item} fallbackIcon="race" />
                 ))}
             </ul>
         </div>

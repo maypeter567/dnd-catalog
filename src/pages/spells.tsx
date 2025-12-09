@@ -7,7 +7,7 @@ export default function Spells() {
       <h2>Spells</h2>
       <ul className="cards-list">
         {defaultSpells.map((item) => (
-          <Card key={item.title} content={item} />
+          <Card key={item.title} content={item} fallbackIcon="spell" />
         ))}
       </ul>
     </div>

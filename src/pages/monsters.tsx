@@ -7,7 +7,7 @@ export default function Monsters() {
       <h2>Monsters</h2>
       <ul className="cards-list">
         {defaultMonsters.map((item) => (
-          <Card key={item.title} content={item} />
+          <Card key={item.title} content={item} fallbackIcon="monster" />
         ))}
       </ul>
     </div>
