@@ -1,3 +1,5 @@
+import { useBookmarks } from "../context/BookmarkContext";
+
 export type Contents = {
   title: string;
   headerBlock?: string;
