@@ -2,18 +2,18 @@ import Card from "../components/Card";
 import { defaultClasses } from "../data/Cards";
 
 export default function Classes() {
-  const cards = defaultClasses
-    .filter((item) => item)
-    .map((item, index) => (
-      <li key={index} className="card">
-        <details>
-          <summary>
-            <h3 className="card-title">{item.title}</h3>
-          </summary>
-          <p>{item.description}</p>
-        </details>
-      </li>
-    ));
+  // const cards = defaultClasses
+  //   .filter((item) => item)
+  //   .map((item, index) => (
+  //     <li key={index} className="card">
+  //       <details>
+  //         <summary>
+  //           <h3 className="card-title">{item.title}</h3>
+  //         </summary>
+  //         <p>{item.description}</p>
+  //       </details>
+  //     </li>
+  //   ));
 
   return (
     <div className="page-section">
